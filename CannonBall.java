@@ -141,5 +141,7 @@ public class CannonBall extends JPanel implements ActionListener {
 	}
 	public static void main(String[] args) {
 		new CannonBall();
+
+		hello
 	}
 }
