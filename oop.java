@@ -5,14 +5,14 @@ import java.awt.event.*;
 
 
 
-public class oop extends JPanel {
-    
-    
-
+public class oop extends JPanel implements ActionListener {
+    Timer timer = new Timer(10,this);
+    JButton start = new JButton("Start");
+    JPanel set = new JPanel();
     public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		this.setBackground(Color.gray);
-		
+		set.add(start);
 	}
 
     
@@ -20,8 +20,7 @@ public class oop extends JPanel {
     
     
     
-    
-}public static void main(String[] args) {
+    public static void main(String[] args) {
 		JFrame frame = new JFrame(); //create an object of this frame
 		oop test = new oop(); //create an object of CatchingFlashingBall
 		frame.add(test); //add JPanel into JFrame
@@ -32,3 +31,4 @@ public class oop extends JPanel {
 		frame.setVisible(true); //set visibility of this frame
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//set default Close Operation
 	}
+}
